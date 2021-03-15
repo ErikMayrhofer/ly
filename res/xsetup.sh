@@ -26,6 +26,7 @@ case $SHELL in
     # zshenv is always sourced automatically.
     [ -f $zdir/zprofile ] && . $zdir/zprofile
     [ -f $zhome/.zprofile ] && . $zhome/.zprofile
+    [ -f $zhome/.profile ] && . $zhome/.profile
     [ -f $zdir/zlogin ] && . $zdir/zlogin
     [ -f $zhome/.zlogin ] && . $zhome/.zlogin
     emulate -R sh
